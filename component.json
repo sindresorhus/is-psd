@@ -1,0 +1,29 @@
+{
+  "name": "is-psd",
+  "version": "0.0.0",
+  "description": "Check if a Buffer/Uint8Array is a PSD image",
+  "license": "MIT",
+  "repo": "sindresorhus/is-psd",
+  "scripts": [
+    "index.js"
+  ],
+  "keywords": [
+    "psd",
+    "photoshop",
+    "document",
+    "graphics",
+    "image",
+    "img",
+    "pic",
+    "picture",
+    "photo",
+    "type",
+    "detect",
+    "check",
+    "is",
+    "exif",
+    "binary",
+    "buffer",
+    "uint8array"
+  ]
+}
