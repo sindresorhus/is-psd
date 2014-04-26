@@ -27,7 +27,7 @@ $ component install sindresorhus/is-psd
 ```js
 var readChunk = require('read-chunk'); // npm install read-chunk
 var isPsd = require('is-psd');
-var buffer = readChunk('unicorn.psd', 0, 4);
+var buffer = readChunk.sync('unicorn.psd', 0, 4);
 
 isPsd(buffer);
 //=> true
