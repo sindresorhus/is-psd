@@ -11,14 +11,6 @@ Used by [image-type](https://github.com/sindresorhus/image-type).
 $ npm install --save is-psd
 ```
 
-```sh
-$ bower install --save is-psd
-```
-
-```sh
-$ component install sindresorhus/is-psd
-```
-
 
 ## Usage
 
