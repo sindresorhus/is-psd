@@ -1,14 +1,12 @@
 # is-psd [![Build Status](https://travis-ci.org/sindresorhus/is-psd.svg?branch=master)](https://travis-ci.org/sindresorhus/is-psd)
 
-> Check if a Buffer/Uint8Array is a [PSD](http://en.wikipedia.org/wiki/Adobe_Photoshop#File_format) image
-
-Used by [image-type](https://github.com/sindresorhus/image-type).
+> Check if a Buffer/Uint8Array is a [PSD](https://en.wikipedia.org/wiki/Adobe_Photoshop#File_format) image
 
 
 ## Install
 
-```sh
-$ npm install --save is-psd
+```
+$ npm install is-psd
 ```
 
 
@@ -17,9 +15,9 @@ $ npm install --save is-psd
 ##### Node.js
 
 ```js
-var readChunk = require('read-chunk'); // npm install read-chunk
-var isPsd = require('is-psd');
-var buffer = readChunk.sync('unicorn.psd', 0, 4);
+const readChunk = require('read-chunk'); // npm install read-chunk
+const isPsd = require('is-psd');
+const buffer = readChunk.sync('unicorn.psd', 0, 4);
 
 isPsd(buffer);
 //=> true
@@ -28,11 +26,11 @@ isPsd(buffer);
 ##### Browser
 
 ```js
-var xhr = new XMLHttpRequest();
+const xhr = new XMLHttpRequest();
 xhr.open('GET', 'unicorn.psd');
 xhr.responseType = 'arraybuffer';
 
-xhr.onload = function () {
+xhr.onload = () => {
 	isPsd(new Uint8Array(this.response));
 	//=> true
 };
@@ -50,6 +48,11 @@ Accepts a Buffer (Node.js) or Uint8Array.
 It only needs the first 4 bytes.
 
 
+## Related
+
+- [file-type](https://github.com/sindresorhus/file-type) - Detect the file type of a Buffer/Uint8Array
+
+
 ## License
 
-MIT © [Sindre Sorhus](http://sindresorhus.com)
+MIT © [Sindre Sorhus](https://sindresorhus.com)
