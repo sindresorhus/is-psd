@@ -1,4 +1,4 @@
-# is-psd [![Build Status](https://travis-ci.org/sindresorhus/is-psd.svg?branch=master)](https://travis-ci.org/sindresorhus/is-psd)
+# is-psd
 
 > Check if a Buffer/Uint8Array is a [PSD](https://en.wikipedia.org/wiki/Adobe_Photoshop#File_format) image
 
